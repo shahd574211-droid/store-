@@ -7,11 +7,9 @@ import { formatCurrency } from '@/utils/format';
 import Image from 'next/image';
 import React from 'react'
 
-interface params {
-  id: string
-}
 
-async function ProdectesDetailsPage({ params }: { params: params }) {
+
+async function ProdectesDetailsPage({ params }: any) {
   const { id } = await params;
   const product = await fetchSingleProduct(id)
   const dollarAmount = formatCurrency(product.price)

@@ -2,14 +2,14 @@
   "name": "nextjs2025",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": " npx prisma generate &&  next build",
-    "start": "next start",
-    "lint": "eslint",
-    "postinstall": "npm run generate",
-    "generate": "npx prisma generate"
-  },
+ "scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint",
+  "postinstall": "prisma generate",
+  "generate": "prisma generate"
+},
   "dependencies": {
     "@prisma/config": "^7.2.0",
     "@radix-ui/react-dropdown-menu": "^2.1.16",

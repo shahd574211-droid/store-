@@ -21,7 +21,7 @@ import db from '@/utils/db'
       <Carousel>
         <CarouselContent>
          {
-         hero.map ((item) => (
+         hero.map((item :{ id: string; image: string; name?: string }) => (
              <CarouselItem key={item.id}>
             <div className='p-2'>
              <Image
